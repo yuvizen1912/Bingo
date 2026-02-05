@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bingo vs Bot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Bingo: You vs Computer</h1>
+    <button id="startBtn">Start Game</button>
+    <div id="status">Press Start!</div>
+    
+    <div class="game-container">
+        <div class="board-section">
+            <h3>Your Card</h3>
+            <div id="player-board" class="grid"></div>
+        </div>
+        <div class="board-section">
+            <h3>Computer's Card</h3>
+            <div id="bot-board" class="grid"></div>
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
